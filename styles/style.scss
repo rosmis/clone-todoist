@@ -1,0 +1,29 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.custom-container-blog {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-max("tablet") {
+    max-width: 993px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  @include media-max("phone-up") {
+    max-width: 767px;
+  }
+}
+
+@import "./home";
